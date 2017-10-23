@@ -1,3 +1,4 @@
 # Cool Codes
 Some cool tricks in one place
-[Parallel programming in python](parallelisation.py)
+
+1. [Parallel programming in python](parallelisation.py)
