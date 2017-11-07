@@ -16,7 +16,7 @@ plt.plot(x1, y1, 'ko-')
 plt.title('A tale of 2 subplots')
 plt.ylabel('Damped oscillation')
 
-plt.subplot(2, 1, 2)
+plt.subplot(2, 1, 2)  #Creates 2 rows and 1 column. Plotting second plot.
 plt.plot(x2, y2, 'r.-')
 plt.xlabel('time (s)')
 plt.ylabel('Undamped')
