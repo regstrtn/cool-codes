@@ -1,0 +1,19 @@
+Useful commands
+
+
+#Force Mount hibernated partition. The 500GB partition is at /dev/sda4
+
+sudo ntfsfix /dev/sda4 
+
+
+#Backup to another linux system
+
+rsync -a --delete /home/user/Downloads/ user@SL1-27:/home/user/Downloads
+
+
+#Run jupyter notebook on another computer
+	jupyter notebook --generate-config
+	jupyter notebook password
+	On the server, run ipython notebook --ip=localhost --port=9876. Port can be any other number.
+	On the client, run ssh -N -f -L localhost:8881:localhost:9876 user@address.of.server. This will create a tunnel from server's localhost:9876 to your localhost:8881
+	If everything worked well, open your web browser and run localhost:8881.
